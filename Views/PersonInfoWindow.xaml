@@ -1,0 +1,40 @@
+﻿<Window x:Class="DateProject01.Views.PersonInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DateProject01.Views"
+        mc:Ignorable="d"
+        Title="PersonInfoWindow" Height="380" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="43*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Content="Your name: " Margin="0,0,2,38.4" Grid.RowSpan="2"/>
+        <TextBox Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="22" Margin="0.4,9,27.6,9.8" Text="{Binding Name, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1"/>
+        <Label Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Content="Your surname: " Margin="0,0,2,38.4" Grid.RowSpan="2"/>
+        <TextBox Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="22" Margin="0.4,8.2,27.6,9.8" Text="{Binding Surname, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1"/>
+        <Label Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Content="Your email: " Margin="0,0,2,38.4" Grid.RowSpan="2"/>
+        <TextBox Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="22" Margin="124,8.2,27.6,9.8" Text="{Binding Email, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Content="Your birthday: " Margin="0,0,2,38.4" Grid.RowSpan="2"/>
+        <TextBox Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="22" Margin="0.4,8.6,27.6,10.2" Text="{Binding BirthDate, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1"/>
+        <Label Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Content="Your sun sign: " Margin="0,0,2,38.4" Grid.RowSpan="2"/>
+        <TextBox Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="22" Margin="0.4,8.2,27.6,9.8" Text="{Binding SunSign, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1"/>
+        <Label Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Content="Your chinese sign: " Margin="0,0,2,38.4" Grid.RowSpan="2"/>
+        <TextBox Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="22" Margin="0.4,8.2,27.6,9.8" Text="{Binding ChineseSign, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1"/>
+        <Label Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" Content="Is you adult? " Margin="0,0,2,38.4" Grid.RowSpan="2"/>
+        <TextBox Grid.Row="6" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="22" Margin="124,8.2,27.6,9.8" Text="{Binding IsAdult, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="22" Margin="26,10.2,27.6,7.8" Text="{Binding IsBirthday, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+    </Grid>
+</Window>
